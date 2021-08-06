@@ -4,9 +4,20 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
-const Hero = (props) => (
+const Hero = () => (
   <div>
-    Hero
+    <Section>
+      <LeftSection>
+        <SectionTitle>
+          Welcome to <br />
+          My Personal Portfolio
+        </SectionTitle>
+        <SectionText>
+          Full stack developer ......
+        </SectionText>
+        <Button onClick={() => window.location = 'www.google.com'}>Learn More</Button>
+      </LeftSection>
+    </Section>
   </div>
 );
 
